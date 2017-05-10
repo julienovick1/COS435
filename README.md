@@ -19,7 +19,6 @@
 ## Working Code
 
 ```markdown
-Code block
 
 #!/usr/bin/env python
 import sys
