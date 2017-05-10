@@ -42,7 +42,7 @@ def main():
 	# open query
 	with open(query) as input_file:
 		for line in input_file:
-			query_term = line
+			query_term = line.rstrip('\n')
 
 			# iterate through documents
 			for document in os.listdir("/Users/Julie/cos435/talks"):
@@ -50,23 +50,20 @@ def main():
 				open_doc = open(filename, 'r')
 				doc = open_doc.read()
 				word_list = doc.split()
-				n = 2
-
-				word_list[i:i+n] for i in range(0,len(word_list),n)
 
 				# initilize variables
 				count = 0
 				all_data = []
 
 				# count appearance of query term
-				freq = word_list.count(query_term)
+				freq = doc.count(query_term)
 
 				# total word count
 				for w in word_list:
 					count += 1
 
 				# percentage of technical words
-				percent_tech_words = freq/count
+				percent_tech_words = (float(freq)/float(count)) * 100
 
 				# populate all_data with doc, query_term, freq, count
 				all_data.append(str(document))
