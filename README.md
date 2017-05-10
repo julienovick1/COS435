@@ -3,6 +3,8 @@
 ## About
 - Our Project: Parse through TEDTalks to find the frequency of our chosen query terms and make conclusions about the talk's popularity, importance of information, etc.
 
+[Project Report](https://docs.google.com/a/princeton.edu/document/d/1SSCkPTsWcfJLbCXR1BfvUc-UPiSH6GS6dpEigx0i74c/edit?usp=sharing)
+
 ## The Team
 - Professor: Andrea LaPaugh 
 
